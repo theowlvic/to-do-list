@@ -13,7 +13,7 @@ def load_tasks():
     with open(TASKS_FILE, "r") as f:
         return json.load(f)
 
-
+#adding a comment here to change the original main
 def save_tasks(tasks):
     """Save the list of tasks to a JSON file."""
     with open(TASKS_FILE, "w") as f:
@@ -77,12 +77,14 @@ def main():
     tasks = load_tasks()
 
     while True:
-        print("\n [blue]==== To-Do List Menu ====[/blue]")
+
+        print("\n [blue]==== Victor's To-Do List Menu ====[/blue]")
         print("[blue][bold]1.[/bold] View tasks[/blue]")
         print("[blue][bold]2.[/bold] Add a task[/blue]")
         print("[blue][bold]3.[/bold] Mark task as complete[/blue]")
         print("[blue][bold]4.[/bold] Delete a task[/blue]")
         print("[blue][bold]5.[/bold] Exit[/blue]")
+
 
         choice = input("Select an option (1-5): ").strip()
 
